@@ -258,4 +258,129 @@ layout: center
 layout: center
 ---
 
-<h1> DATABASES </h1>
+<h1> DATABASES</h1>
+
+<v-click>
+
+Types of Databases:
+  - **Relational Databases**: Structured, uses tables (e.g., MySQL, PostgreSQL).
+  - **NoSQL Databases**: Flexible schema, often for unstructured data (e.g., MongoDB, Firebase).
+  - Modern databases, like vector db's, graph db's and more.
+</v-click>
+
+---
+
+# Relational Databases and SQL
+
+### SQL (Structured Query Language)
+
+<br>
+<v-clicks>
+
+- **Standard language** for interacting with relational databases.
+- Common SQL operations:
+  - **SELECT**: Retrieve data from a table.
+  - **INSERT**: Add new data to a table.
+  - **UPDATE**: Modify existing data.
+  - **DELETE**: Remove data from a table.
+- Relational concepts:
+  - **Primary Keys**: Unique identifier for records.
+  - **Foreign Keys**: Links between tables.
+
+</v-clicks>
+
+---
+
+### Example SQL Query
+
+<br>
+<br>
+
+```sql {all|1|2|3|all}
+SELECT name, age 
+FROM users 
+WHERE age > 18;
+```
+<br>
+<br>
+
+- Retrieves names and ages of users older than 18.
+
+<!-- Consider a table users, with columns userId, name, age, address, etc.
+This query is to get the 'name and age' of all users who are above 18 -->
+
+
+---
+layout: center
+---
+
+<h1>FRONTEND</h1>
+<h2>The Only Thing That Actually Matters :)</h2>
+<br>
+
+<v-clicks>
+
+  - **HTML**: structure, format, and content of a page.
+  - **CSS**: layout and appearance.
+  - **Javascript**: interactivity and functionality.
+  - **WebAssembly**??? : run multiple languages in browser
+</v-clicks>
+
+<!-- No matter how perfect your backend is, at the end of the day, if you can't provide a good UX, your app is dead from day 1.
+
+This includes good design, colors, animations, transitions and everything else. -->
+
+---
+layout: center
+---
+
+# Frameworks have taken over frontend
+
+<v-click>
+React, Vue, Svelte, Solid and many more...
+</v-click>
+<br>
+<span v-click v-mark.orange.underline="3">
+No Basics, No Use
+</span>
+<!-- 
+At the end of the day, if your basics are trash, if you don't know how things work in the browser, it will be very difficult for you to understand frameworks, essentially delivering below average code -->
+
+---
+
+# Lets Build!
+
+### Server first
+
+``` {1|1-2|1-3|1-4}
+- A programming language with basic networking capabilities (Almost all)
+- Create a server, and listen(open) a port
+- Serve endpoints (eg : / should serve 'hello', /account should serve 'hi')
+- Proper error handling (responsible 🙂)
+```
+
+<div v-click="'+1'">
+
+<br>
+
+### Build a better server?
+
+```
+- Write API's for frontend to call from
+- Database?
+```
+</div>
+
+<br>
+<div v-click="'+1'">
+
+### Frontend
+
+```
+- Use HTML, CSS and JS (no frameworks!)
+- Create a form
+- Send request to server, HANDLE FRONTEND ERRORS!
+- Display the result
+```
+
+</div>
