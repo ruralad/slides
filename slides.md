@@ -61,10 +61,16 @@ level: 2
 
 
 <!--
+
+[click] 
 - Top level or very basic intro to key concepts
+
+[click]
 - You need to know what you are writing
 - You need to know others will work on the same code
 - Example - Error Handling
+
+[click] 
 - Responsible code and industry ready is closely related
 -->
 
@@ -291,12 +297,18 @@ Types of Databases:
 
 ---
 
-### Example SQL Query
+### Example SQL Queries
 
 <br>
 <br>
 
-```sql {all|1|2|3|all}
+```sql 
+INSERT INTO users (name,age,country)
+VALUES ("Abhinav","24","India");
+```
+<br>
+
+```sql 
 SELECT name, age 
 FROM users 
 WHERE age > 18;
@@ -304,10 +316,12 @@ WHERE age > 18;
 <br>
 <br>
 
+- Insert a new entry(row) into table.
 - Retrieves names and ages of users older than 18.
 
 <!-- Consider a table users, with columns userId, name, age, address, etc.
-This query is to get the 'name and age' of all users who are above 18 -->
+First query is to insert a new user into the table.
+Second query is to get the 'name and age' of all users who are above 18 -->
 
 
 ---
@@ -380,7 +394,15 @@ At the end of the day, if your basics are trash, if you don't know how things wo
 - Use HTML, CSS and JS (no frameworks!)
 - Create a form
 - Send request to server, HANDLE FRONTEND ERRORS!
-- Display the result
+- Display the results
 ```
 
 </div>
+
+---
+layout: center
+---
+
+# Hands On!
+
+<p class="pt-3"> visit <mark class="p-2">github.com/codespaces</mark> </p>
