@@ -1,87 +1,43 @@
 ---
-# You can also start simply with 'default'
 theme: seriph
-# random image from a curated Unsplash collection by Anthony
-# like them? see https://unsplash.com/collections/94734566/slidev
-background: https://cover.sli.dev
-# some information about your slides (markdown enabled)
-title: Welcome to Slidev
+title: Intro To Fullstack | Abhinav
 info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
-
-  Learn more at [Sli.dev](https://sli.dev)
-# apply unocss classes to the current slide
+  ## Intro To Fullstack | Abhinav
+  Prepared for AKCSSC 2024 - GECK December 14, 2024
 class: text-center
-# https://sli.dev/features/drawing
 drawings:
   persist: false
-# slide transition: https://sli.dev/guide/animations.html#slide-transitions
-transition: slide-left
-# enable MDC Syntax: https://sli.dev/features/mdc
 mdc: true
 ---
 
-# Welcome to Slidev
+# Intro to Fullstack
 
-Presentation slides for developers
-
-<div @click="$slidev.nav.next" class="mt-12 py-1" hover:bg="white op-10">
-  Press Space for next page <carbon:arrow-right />
-</div>
-
-<div class="abs-br m-6 text-xl">
-  <button @click="$slidev.nav.openInEditor" title="Open in Editor" class="slidev-icon-btn">
-    <carbon:edit />
-  </button>
-  <a href="https://github.com/slidevjs/slidev" target="_blank" class="slidev-icon-btn">
-    <carbon:logo-github />
-  </a>
+<div>
+  For AKCSSC'25
 </div>
 
 <!--
-The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
+Oi! <br>
+This presentation is made using Slidev.
+<br>
+ [Slidev Site](https://sli.dev/)
+ <br>
+ [My github](https://github.com/ruralad) (nothing here)
 -->
 
 ---
-transition: fade-out
----
 
-# What is Slidev?
-
-Slidev is a slides maker and presenter designed for developers, consist of the following features
-
-- 📝 **Text-based** - focus on the content with Markdown, and then style them later
-- 🎨 **Themable** - themes can be shared and re-used as npm packages
-- 🧑‍💻 **Developer Friendly** - code highlighting, live coding with autocompletion
-- 🤹 **Interactive** - embed Vue components to enhance your expressions
-- 🎥 **Recording** - built-in recording and camera view
-- 📤 **Portable** - export to PDF, PPTX, PNGs, or even a hostable SPA
-- 🛠 **Hackable** - virtually anything that's possible on a webpage is possible in Slidev
+# About Me
 <br>
-<br>
+<v-clicks>
+  <p>Product Dev @ Envestnet</p>
+  <p>Java</p>
+  <p>Fullstack Javascript (mainly) & others</p>
+</v-clicks>
 
-Read more about [Why Slidev?](https://sli.dev/guide/why)
 
 <!--
-You can have `style` tag in markdown to override the style for the current page.
-Learn more: https://sli.dev/features/slide-scope-style
--->
-
-<style>
-h1 {
-  background-color: #2B90B6;
-  background-image: linear-gradient(45deg, #4EC5D4 10%, #146b8c 20%);
-  background-size: 100%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-}
-</style>
-
-<!--
-Here is another comment.
+https://www.envestnet.com/
 -->
 
 ---
@@ -89,33 +45,121 @@ transition: slide-up
 level: 2
 ---
 
-# Navigation
+# What To Expect
+<br>
+  <p class="m-0 p-0" v-click>Fundamentals of Fullstack Web</p>
+  <span class="inline-block">
+    <p v-click v-mark.orange.underline="4">Writing responsible code</p>
+    <p v-click class="inline-block" v-mark.orange.underline="4">Getting Industry Ready</p>
+  </span>
 
-Hover on the bottom-left corner to see the navigation's controls panel, [learn more](https://sli.dev/guide/ui#navigation-bar)
 
-## Keyboard Shortcuts
 
-|                                                     |                             |
-| --------------------------------------------------- | --------------------------- |
-| <kbd>right</kbd> / <kbd>space</kbd>                 | next animation or slide     |
-| <kbd>left</kbd>  / <kbd>shift</kbd><kbd>space</kbd> | previous animation or slide |
-| <kbd>up</kbd>                                       | previous slide              |
-| <kbd>down</kbd>                                     | next slide                  |
-
-<!-- https://sli.dev/guide/animations.html#click-animation -->
-<img
-  v-click
-  class="absolute -bottom-9 -left-7 w-80 opacity-50"
-  src="https://sli.dev/assets/arrow-bottom-left.svg"
-  alt=""
-/>
-<p v-after class="absolute bottom-23 left-45 opacity-30 transform -rotate-10">Here!</p>
+<!--
+- You need to know what you are writing
+- You need to know others will work on the same code
+- Example - Error Handling
+- Responsible code and industry ready is closely related
+-->
 
 ---
-layout: two-cols
-layoutClass: gap-16
+
+# How to Follow Along
+
+<br>
+<v-clicks>
+  <p>Slides + Code</p>
+  <p>Ask Questions Anytime</p>
+  <p>Notes?</p>
+</v-clicks>
+
+---
+transition: slide-up
+layout: statement
 ---
 
+# The Journey of a Web Request
+
+<br>
+
+<v-clicks>
+<p >
+<img class="inline"  src="https://fonts.gstatic.com/s/e/notoemoji/latest/261d_fe0f/512.gif" alt="☝" width="32" height="32">
+ User initiates action</p>
+<p><img class="inline" src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f6eb/512.gif" alt="🛫" width="32" height="32">
+ Request travels through network</p>
+<p><img class="inline" src="https://fonts.gstatic.com/s/e/notoemoji/latest/2699_fe0f/512.gif" alt="⚙" width="32" height="32"> Servers process the request</p>
+
+<p><img class="inline" src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f6ec/512.gif" alt="🛬" width="32" height="32"> Data transforms and travels</p>
+<p><img class="inline"  src="https://fonts.gstatic.com/s/e/notoemoji/latest/1f440/512.gif" alt="👀" width="32" height="32"> User sees the result</p>
+</v-clicks>
+
+---
+
+<img src="/request-1.png" />
+
+<!--
+
+## Authentication
+<br>
+Take an example of a banking app. 
+<br>
+
+- User can type their mail(or mobile or any unique data point), and get their current account details, bank balance and all
+- Cant anybody get details of everyone by brute force?
+
+## Authorization
+- If one person knows the email of the other person, even if the person is
+authenticated, where is the logic to identify if the current user is actually asking only for their data
+-->
+
+---
+
+<img src="/request-2.png" />
+
+<!--
+## Consider URL Shortner
+
+- Same request is made by thousands of users. 
+- request -> server fires a request to check database for the shortened url -> database returns the complete url
+
+## Other examples
+- Election, new data is came in every 5 minutes
+- Banking app itself, where we show like currency exchange rate( same for all users)
+
+-->
+
+---
+
+<img src="/request-3.png" />
+
+<!--
+## Why cache ?
+- Faster data retrieval : cache stored in memory, significantly faster than accessing data from a hard disk, better UX
+- Reduced database load, improving Scalability
+
+## What happens when our app go viral ?
+- URL Shortner goes viral. Our server is overloaded
+- First, we can improve our server resources (increase cpu and ram)
+- But what happens when its practically impossible? : We can introduce more servers
+- Scaling is implemented. We have done VERTICAL and HORIZONTAL scaling
+- How to choose which request to pass to which server? : LOAD BALANCER
+
+-->
+
+---
+
+<img src="/request-4.png" />
+
+<!--
+Scaling is extremely important in the modern web as it allows websites and applications to handle increasing user traffic and data loads without experiencing performance issues or service disruptions
+
+- We can scale db and cache, auth services as well and bring them closer to the user
+- An Indian user dont have to request american db's for data, we can introduce a new server in Mumbai to provide better UX
+
+-->
+
+---
 # Table of contents
 
 You can use the `Toc` component to generate a table of contents for your slides:
@@ -131,8 +175,10 @@ The title will be inferred from your slide content, or you can override it with 
 <Toc text-sm minDepth="1" maxDepth="2" />
 
 ---
+
 layout: image-right
 image: https://cover.sli.dev
+
 ---
 
 # Code
@@ -144,17 +190,18 @@ Use code snippets and get the highlighting directly, and even types hover!
 // and errors in markdown code blocks
 // More at https://shiki.style/packages/twoslash
 
-import { computed, ref } from 'vue'
+import { computed, ref } from "vue";
 
-const count = ref(0)
-const doubled = computed(() => count.value * 2)
+const count = ref(0);
+const doubled = computed(() => count.value * 2);
 
-doubled.value = 2
+doubled.value = 2;
 ```
 
 <arrow v-click="[4, 5]" x1="350" y1="310" x2="195" y2="334" color="#953" width="2" arrowSize="1" />
 
 <!-- This allow you to embed external code blocks -->
+
 <<< @/snippets/external.ts#snippet
 
 <!-- Footer -->
@@ -185,8 +232,8 @@ Notes can also sync with clicks
 -->
 
 ---
-level: 2
----
+
+## level: 2
 
 # Shiki Magic Move
 
@@ -198,13 +245,13 @@ Add multiple code blocks and wrap them with <code>````md magic-move</code> (four
 ```ts {*|2|*}
 // step 1
 const author = reactive({
-  name: 'John Doe',
+  name: "John Doe",
   books: [
-    'Vue 2 - Advanced Guide',
-    'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery'
-  ]
-})
+    "Vue 2 - Advanced Guide",
+    "Vue 3 - Basic Guide",
+    "Vue 4 - The Mystery",
+  ],
+});
 ```
 
 ```ts {*|1-2|3-4|3-4,8}
@@ -213,16 +260,16 @@ export default {
   data() {
     return {
       author: {
-        name: 'John Doe',
+        name: "John Doe",
         books: [
-          'Vue 2 - Advanced Guide',
-          'Vue 3 - Basic Guide',
-          'Vue 4 - The Mystery'
-        ]
-      }
-    }
-  }
-}
+          "Vue 2 - Advanced Guide",
+          "Vue 3 - Basic Guide",
+          "Vue 4 - The Mystery",
+        ],
+      },
+    };
+  },
+};
 ```
 
 ```ts
@@ -230,15 +277,15 @@ export default {
 export default {
   data: () => ({
     author: {
-      name: 'John Doe',
+      name: "John Doe",
       books: [
-        'Vue 2 - Advanced Guide',
-        'Vue 3 - Basic Guide',
-        'Vue 4 - The Mystery'
-      ]
-    }
-  })
-}
+        "Vue 2 - Advanced Guide",
+        "Vue 3 - Basic Guide",
+        "Vue 4 - The Mystery",
+      ],
+    },
+  }),
+};
 ```
 
 Non-code blocks are ignored.
@@ -247,13 +294,13 @@ Non-code blocks are ignored.
 <!-- step 4 -->
 <script setup>
 const author = {
-  name: 'John Doe',
+  name: "John Doe",
   books: [
-    'Vue 2 - Advanced Guide',
-    'Vue 3 - Basic Guide',
-    'Vue 4 - The Mystery'
-  ]
-}
+    "Vue 2 - Advanced Guide",
+    "Vue 3 - Basic Guide",
+    "Vue 4 - The Mystery",
+  ],
+};
 </script>
 ```
 ````
@@ -301,8 +348,8 @@ Also, HTML elements are valid:
 -->
 
 ---
-class: px-20
----
+
+## class: px-20
 
 # Themes
 
@@ -459,7 +506,9 @@ LaTeX is supported out-of-box. Powered by [KaTeX](https://katex.org/).
 Inline $\sqrt{3x-1}+(1+x)^2$
 
 Block
-$$ {1|3|all}
+
+$$
+{1|3|all}
 \begin{aligned}
 \nabla \cdot \vec{E} &= \frac{\rho}{\varepsilon_0} \\
 \nabla \cdot \vec{B} &= 0 \\
@@ -549,9 +598,14 @@ database "MySql" {
 Learn more: [Mermaid Diagrams](https://sli.dev/features/mermaid) and [PlantUML Diagrams](https://sli.dev/features/plantuml)
 
 ---
+
 foo: bar
 dragPos:
-  square: 691,32,167,_,-16
+square: 691,32,167,\_,-16
+
+---
+dragPos:
+  square: -119,-22,0,0
 ---
 
 # Draggable Elements
@@ -594,9 +648,12 @@ Double-click on the draggable elements to edit their positions.
 <v-drag-arrow pos="67,452,253,46" two-way op70 />
 
 ---
+
 src: ./pages/imported-slides.md
 hide: false
+
 ---
+
 
 ---
 
@@ -607,26 +664,33 @@ Slidev provides built-in Monaco Editor support.
 Add `{monaco}` to the code block to turn it into an editor:
 
 ```ts {monaco}
-import { ref } from 'vue'
-import { emptyArray } from './external'
+import { ref } from "vue";
+import { emptyArray } from "./external";
 
-const arr = ref(emptyArray(10))
+const arr = ref(emptyArray(10));
 ```
 
 Use `{monaco-run}` to create an editor that can execute the code directly in the slide:
 
 ```ts {monaco-run}
-import { version } from 'vue'
-import { emptyArray, sayHello } from './external'
+import { version } from "vue";
+import { emptyArray, sayHello } from "./external";
 
-sayHello()
-console.log(`vue ${version}`)
-console.log(emptyArray<number>(10).reduce(fib => [...fib, fib.at(-1)! + fib.at(-2)!], [1, 1]))
+sayHello();
+console.log(`vue ${version}`);
+console.log(
+  emptyArray<number>(10).reduce(
+    (fib) => [...fib, fib.at(-1)! + fib.at(-2)!],
+    [1, 1]
+  )
+);
 ```
 
 ---
+
 layout: center
 class: text-center
+
 ---
 
 # Learn More
